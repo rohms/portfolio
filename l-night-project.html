@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <!--font style-->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/rdev.JPG" alt="DevRoosa" />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+            <li><a href="index.html#services" class="nav__link">What I do</a></li>
+            <li><a href="index.html#about" class="nav__link">About me</a></li>
+            <li><a href="index.html#work" class="nav__link">My work</a></li>
+          
+        </ul>
+      </nav>
+    </header>
+
+  <!-- Introduction-->
+  <section class="intro">
+    <h1 class="section__title section__title--intro">
+      The <strong>L-Night project</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">Website for the queer and lesbian women's group L-Night</p>
+    <img src="img/lnightber.jpg" alt="a picture of a project" class="intro__img" />
+  </section>
+
+<div class="portfolio__item-individual">
+    <p>This is the L-Night project which I created as my final project at WBS Coding school.</p>
+    <img src="img/lnightweb.JPG" alt="">
+    <p>The front-end: <br>
+        For the front end I used ReactJS and MUI, for the email contact form Nodemailer integrated with Gmail and recapctha for the contact form.
+        For the calendar I used React Calendar. </p>
+    <p>  
+        The events are stored at the moment in the MongoDB but eventually the events would come from the Facebook page of the L-Night group using their API.
+    </p>  
+    <p>For the backend: <br>
+        In the backend I used Express, NodeJS, MongoDB and for the gallery pictures AWS S3 bucket.
+        For the authentication which is only for admins I used JWT.
+        I will extend this project and add a merchandise store which I would create using Shopify and possibly Printify.</p>
+
+        <p>The link to the project:
+        <a href="https://www.l-night.com/" target="_blank" rel="noopener noreferrer">L-Night</a></p>
+</div>
+
+ <!-- Footer -->
+ <footer class="footer">
+    <!-- <a href="mailto:hello@jane.dev" class="footer__link">Hello@dev.dev</a> -->
+    <ul class="social-list">
+        <li class="social-list__item">
+          <a href="https://www.codewars.com/users/rohms" class="social-list__link" target="_blank" rel="noopener noreferrer">Codewars</a></li>
+        <li class="social-list__item">
+          <a href="https://stackoverflow.com/users/17149568/rohms" class="social-list__link" target="_blank" rel="noopener noreferrer">stackoverflow</a></li>
+        <li class="social-list__item">
+          <a href="https://www.linkedin.com/in/roosa-hamalainen/" class="social-list__link" target="_blank" rel="noopener noreferrer">
+          Linkedin</a></li>
+        <li class="social-list__item">
+          <a href="https://github.com/rohms" class="social-list__link" target="_blank" rel="noopener noreferrer">
+          Github</a></li>
+    </ul>
+ </footer>
+
+ <script src="./js/index.js"></script>
+  </body>
+</html>
